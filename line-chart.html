@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.common.min.js"></script>
+</head>
+<body>
+    <div id="container" style="width :1200px;height:800px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById("container"));
+        var xAxisInit = 2016;
+        var xAxis=[];
+        for(var i =1990;i<=xAxisInit;i++){
+            xAxis.push(i);
+        }
+        var option= {
+            title:{
+                left:'center',
+                text:"趋势"
+            },
+            tooltip : {
+                trigger:'axis'
+            },
+            toolbox:{
+                feature:{
+                    saveAsImage:{
+                        title:'导出'
+                    }
+                }
+            },
+            dataZoom:{
+                type:'inside'
+            },
+            legend:{
+                top:'bottom',
+                data:["国外","中国"]
+            },
+            xAxis : {
+                data:xAxis
+            },
+            yAxis : {
+                name:"量(件)",
+                nameLocation:'middle',
+                nameGap:45
+            },
+            series : [
+                {
+                    name : '中国',
+                    type : 'line',
+                    data:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,5,2,6,11,27,43,61,85,70,46]
+                },
+                {
+                    name : '国外',
+                    type : 'line',
+                    data:[0,0,0,0,0,0,0,2,3,6,15,17,18,11,15,13,15,18,21,28,76,102,132,178,242,128,62]
+                }
+            ]
+
+        };
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
