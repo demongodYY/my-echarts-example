@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.common.min.js"></script>
+</head>
+<body>
+<div id="container" style="width :1200px;height:400px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById("container"));
+    var xAxisInit = 2016;
+    var xAxis=[];
+    for(var i =1990;i<=xAxisInit;i++){
+        xAxis.push(i);
+    }
+    var option= {
+        title:{
+            left:'center',
+            text:"分类"
+        },
+        tooltip : {
+            trigger:'item'
+        },
+        toolbox:{
+            feature:{
+                saveAsImage:{
+                    title:'导出'
+                }
+            }
+        },
+        legend:{
+            top:'bottom',
+            data:["固定式显示设备","近眼显示设备","投影显示设备","头盔显示设备","手持式显示设备"]
+        },
+        series : [
+            {
+                name : '中国',
+                type : 'pie',
+                center : [300,200],
+                label : {
+                    normal:{
+                        show : true,
+                        formatter: '{c}({d}%)'
+
+                    }
+                },
+                data:[
+                    {
+                        value:31,
+                        name:'固定式显示设备'
+                    },
+                    {
+                        value:23,
+                        name:'近眼显示设备'
+                    },
+                    {
+                        value:20,
+                        name:'投影显示设备'
+                    },
+                    {
+                        value:141,
+                        name:'头盔显示设备'
+                    },
+                    {
+                        value:144,
+                        name:'手持式显示设备'
+                    }
+                ]
+            },
+            {
+                name : '国外',
+                type : 'pie',
+                center:[800,200],
+                label : {
+                    normal:{
+                        show : true,
+                        formatter: '{c}({d}%)'
+                    }
+                },
+                data:[
+                    {
+                        value:105,
+                        name:'固定式显示设备'
+                    },
+                    {
+                        value:137,
+                        name:'近眼显示设备'
+                    },
+                    {
+                        value:42,
+                        name:'投影显示设备'
+                    },
+                    {
+                        value:533,
+                        name:'头盔显示设备'
+                    },
+                    {
+                        value:282,
+                        name:'手持式显示设备'
+                    }
+                ]
+            }
+        ]
+
+    };
+    myChart.setOption(option);
+</script>
+</body>
+</html>
