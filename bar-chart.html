@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.common.min.js"></script>
+</head>
+<body>
+<div id="container" style="width : 1000px;height: 600px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById("container"));
+    var xAxis=["微软","索尼","三星","LG","高通","谷歌","MAGIC LEAP","NOKIA","OSTERHOUT","现代"];
+    var option= {
+        title:{
+            left:'center'
+        },
+        tooltip : {
+            trigger:'axis'
+        },
+        toolbox : {
+            feature : {
+                saveAsImage : {
+                    title : '导出'
+                }
+            }
+        },
+        dataZoom:{
+            type : 'inside'
+        },
+        xAxis : {
+            type : 'category',
+            data : xAxis
+        },
+        yAxis : {
+            name:"申请量(件)",
+            nameLocation:'middle',
+            nameTextStyle : {
+                fontSize : 16
+            },
+            nameGap:45,
+            max:150
+        },
+        series : [
+            {
+                name : '排序',
+                type : 'bar',
+                data:[119,63,57,52,35,30,28,27,25,22],
+                barWidth:'25px',
+                barGap:'5px',
+                barCategoryGap:'5px',
+                itemStyle : {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#83bff6'},
+                                {offset: 0.5, color: '#188df0'},
+                                {offset: 1, color: '#188df0'}
+                            ]
+                        )
+                    },
+                    emphasis: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#2378f7'},
+                                {offset: 0.7, color: '#2378f7'},
+                                {offset: 1, color: '#83bff6'}
+                            ]
+                        )
+                    }
+                }
+            }
+        ]
+
+    };
+    myChart.setOption(option);
+</script>
+</body>
+</html>

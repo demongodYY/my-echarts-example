@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.common.min.js"></script>
+</head>
+<body>
+<div id="container" style="width : 1000px;height: 600px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById("container"));
+    var option= {
+        title:{
+            left:'center'
+        },
+        tooltip : {
+            trigger:'axis'
+        },
+        toolbox : {
+            feature : {
+                saveAsImage : {
+                    title : '导出'
+                }
+            }
+        },
+        legend : {
+            top : 'bottom',
+            left : 'center',
+            data : ["原创国","目标国"]
+        },
+        dataZoom:{
+            type : 'inside'
+        },
+        xAxis : {
+            type : 'value',
+            axisLabel : {
+                show : false
+            },
+            inverse : true
+        },
+        yAxis : {
+            type : 'category',
+            axisTick : {show: false},
+            data : ["中国","韩国","日本","美国","欧洲","中国台湾"],
+            inverse : true
+        },
+        series : [
+            {
+                name : '原创国',
+                type : 'bar',
+                stack : '对比',
+                barWidth : '30px',
+                data:[293,311,212,529,105,8]
+            },
+            {
+                name : '目标国',
+                type : 'bar',
+                stack : '对比',
+                barWidth : '30px',
+                data:[-394,-414,-273,-747,-175,-29]
+            }
+        ]
+
+    };
+    myChart.setOption(option);
+</script>
+</body>
+</html>

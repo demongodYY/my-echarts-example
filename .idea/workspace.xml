@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42e4eb9-d080-47c7-8e0d-9dfc6d4a8d9c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bar-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bar-chart2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/line-chart.html" afterPath="$PROJECT_DIR$/line-chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pie-chart.html" afterPath="$PROJECT_DIR$/pie-chart.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="line-chart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/line-chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="165">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -50,11 +49,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="radar-chart.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="radar-chart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radar-chart.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="710">
               <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bar-chart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bar-chart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="47" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bar-chart2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bar-chart2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -82,6 +105,8 @@
         <option value="$PROJECT_DIR$/line-chart.html" />
         <option value="$PROJECT_DIR$/pie-chart.html" />
         <option value="$PROJECT_DIR$/radar-chart.html" />
+        <option value="$PROJECT_DIR$/bar-chart.html" />
+        <option value="$PROJECT_DIR$/bar-chart2.html" />
       </list>
     </option>
   </component>
@@ -227,12 +252,12 @@
       <updated>1482456267796</updated>
       <workItem from="1482456269097" duration="218000" />
       <workItem from="1482456527511" duration="11212000" />
-      <workItem from="1482501156349" duration="5599000" />
+      <workItem from="1482501156349" duration="8970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17029000" />
+    <option name="totallyTimeSpent" value="20400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,16 +332,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reademe.Md" />
-    <entry file="file://$PROJECT_DIR$/line-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pie-chart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -331,6 +346,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
           <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bar-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="47" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bar-chart2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
