@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+<div id="container" style="width :1200px;height:400px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById("container"));
+    var xAxisInit = 2016;
+    var xAxis=[];
+    for(var i =1990;i<=xAxisInit;i++){
+        xAxis.push(i);
+    }
+    var option= {
+        title:{
+            left:'center'
+        },
+        tooltip : {},
+        toolbox:{
+            feature:{
+                saveAsImage:{
+                    title:'导出'
+                }
+            }
+        },
+        legend:{
+            top:'bottom',
+            data:["高通","谷歌"]
+        },
+        radar:{
+            indicator : [
+                {name : "固定式显示设备",max : 15},
+                {name : "头盔显示设备",max : 26},
+                {name : "近眼显示设备",max : 15},
+                {name : "手持式显示设备",max : 15},
+                {name : "投影显示设备",max : 15}
+            ]
+        },
+        series : [
+            {
+                name : "123",
+                type : 'radar',
+                data : [
+                    {
+                        value : [1,26,4,3,1],
+                        name : '高通'
+                    },
+                    {
+                        value : [0,17,8,5,0],
+                        name : '谷歌'
+                    }
+
+                ]
+            }
+        ]
+
+    };
+    myChart.setOption(option);
+</script>
+</body>
+</html>

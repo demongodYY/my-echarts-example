@@ -6,7 +6,7 @@
     <script src="js/echarts.common.min.js"></script>
 </head>
 <body>
-    <div id="container" style="width :1200px;height:800px;"></div>
+    <div id="container" style="width :1200px;height: 800px;"></div>
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById("container"));
         var xAxisInit = 2016;
@@ -16,8 +16,7 @@
         }
         var option= {
             title:{
-                left:'center',
-                text:"趋势"
+                left:'center'
             },
             tooltip : {
                 trigger:'axis'
@@ -34,25 +33,32 @@
             },
             legend:{
                 top:'bottom',
-                data:["国外","中国"]
+                data:["国外","国内"]
             },
             xAxis : {
                 data:xAxis
             },
             yAxis : {
-                name:"量(件)",
+                name:"申请量(件)",
                 nameLocation:'middle',
+                nameTextStyle : {
+                    fontSize : 16
+                },
                 nameGap:45
             },
             series : [
                 {
-                    name : '中国',
+                    name : '国内',
                     type : 'line',
+                    symbolSize : 10,
+                    symbol : 'circle',
                     data:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,5,2,6,11,27,43,61,85,70,46]
                 },
                 {
                     name : '国外',
                     type : 'line',
+                    symbolSize : 10,
+                    symbol : 'circle',
                     data:[0,0,0,0,0,0,0,2,3,6,15,17,18,11,15,13,15,18,21,28,76,102,132,178,242,128,62]
                 }
             ]
